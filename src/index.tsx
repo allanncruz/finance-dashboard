@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Dashbord from './pages/Dashbord';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Dashbord />
   </React.StrictMode>,
   document.getElementById('root')
 );
