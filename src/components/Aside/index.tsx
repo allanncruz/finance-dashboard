@@ -6,7 +6,7 @@ import {
 const Aside: React.FC = () => {
   return(
     <Container>
-      <h1>AS</h1>
+      <h1>Aside</h1>
     </Container>
   );
 }

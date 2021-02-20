@@ -6,7 +6,7 @@ import {
 const MainHeader: React.FC = () => {
   return(
     <Container>
-      <h1>MH</h1>
+      <h1>Main Header</h1>
     </Container>
   );
 }

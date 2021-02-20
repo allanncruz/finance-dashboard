@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
 import {
-  Container
+  Grid
 } from './styles'
+
+import MainHeader from '../MainHeader';
+import Aside from '../Aside';
+import Content from '../Content';
 
 const Layout: React.FC = () => {
   return(
-    <Container>
-      <h1>Layout</h1>
-    </Container>
+    <Grid>
+      <MainHeader />
+      <Aside />
+      <Content />
+    </Grid>
   );
 }
 
