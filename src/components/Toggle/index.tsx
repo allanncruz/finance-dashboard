@@ -10,12 +10,12 @@ const Toggle: React.FC = () => {
   return(
     <Container>
       <ToggleLabel>Light</ToggleLabel>
-      <ToggleSelector
-        checked={online}
-        checkedIcon={false}
-        uncheckedIcon={false}
-        onChange={() => setOnline(!online)}
-      />
+        <ToggleSelector
+          checked={online}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          onChange={() => setOnline(!online)}
+        />
       <ToggleLabel>Dark</ToggleLabel>
     </Container>
   )};
