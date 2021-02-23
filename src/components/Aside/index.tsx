@@ -1,12 +1,46 @@
 import React from "react";
+import LogoImg from '../../assets/logo.svg';
 import {
-  Container
+  MdDashboard,
+  MdArrowDownward,
+  MdArrowUpward,
+  MdExitToApp,
+} from 'react-icons/md';
+import {
+  Container,
+  Header,
+  LogImg,
+  Title,
+  MenuContainer,
+  MenuItemLink,
 } from './styles'
 
 const Aside: React.FC = () => {
   return(
     <Container>
-      <h1>Aside</h1>
+      <Header>
+        <LogImg src={LogoImg} alt="Logo Minha Carteira" />
+        <Title>Minha Carteira</Title>
+      </Header>
+
+      <MenuContainer>
+        <MenuItemLink href="#">
+          <MdDashboard />
+          Dashbord
+        </MenuItemLink>
+        <MenuItemLink href="#">
+          <MdArrowUpward />
+          Entradas
+        </MenuItemLink>
+        <MenuItemLink href="#">
+          <MdArrowDownward />
+          Saídas
+        </MenuItemLink>
+        <MenuItemLink href="#">
+          <MdExitToApp />
+          Sair
+        </MenuItemLink>
+      </MenuContainer>
     </Container>
   );
 }
